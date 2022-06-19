@@ -20,13 +20,14 @@
         </div>
     </header>
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save(event);return false">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
             <!--UC2-->
             <div class="form-head">Employee Payroll form</div>
             <div class="row-content">
                 <label for="label-text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name"
                 placeholder="Your name.." required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
     <!--UC 3-->
     <div class="row-content">
